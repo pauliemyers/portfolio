@@ -1,0 +1,86 @@
+$darkest-blue: hsl(189, 14%, 28%);
+$dark-blue: hsl(189, 28%, 42%);
+$mid-gray-blue: hsl(189, 14%, 53%);
+$mid-blue: hsl(189, 37%, 71%);
+$light-gray-blue: hsl(189, 14%, 78%);
+$light-blue: hsl(189, 65%, 85%);
+$lightest-blue: hsl(189, 6%, 100%);
+
+$darkest-gold: hsl(37, 28%, 28%);
+$dark-gold: hsl(37, 57%, 42%);
+$mid-gray-gold: hsl(37, 28%, 53%);
+$mid-gold: hsl(37, 74%, 71%);
+$light-gray-gold: hsl(37, 28%, 78%);
+$light-gold: hsl(37, 32%, 100%);
+$lightest-gold: hsl(37, 12%, 100%);
+
+$darkest-red: hsl(4, 28%, 28%);
+$dark-red: hsl(4, 57%, 42%);
+$mid-gray-red: hsl(4, 28%, 53%);
+$mid-red: hsl(4, 74%, 71%);
+$light-gray-red: hsl(4, 28%, 78%);
+$light-red: hsl(4, 32%, 100%);
+$lightest-red: hsl(4, 12%, 100%);
+
+$darkest-fuschia: hsl(344, 28%, 28%);
+$dark-fuschia: hsl(344, 57%, 42%);
+$mid-gray-fuschia: hsl(344, 28%, 53%);
+$mid-fuschia: hsl(344, 74%, 71%);
+$light-gray-fuschia: hsl(344, 28%, 78%);
+$light-fuschia: hsl(344, 32%, 100%);
+$lightest-fuschia: hsl(344, 12%, 100%);
+
+$darkest-orange: hsl(15, 28%, 28%);
+$dark-orange: hsl(15, 57%, 42%);
+$mid-gray-orange: hsl(15, 28%, 53%);
+$mid-orange: hsl(15, 74%, 71%);
+$light-gray-orange: hsl(15, 28%, 78%);
+$light-orange: hsl(15, 32%, 100%);
+$lightest-orange: hsl(15, 12%, 100%);
+
+$darkest-purple: hsl(308, 28%, 28%);
+$dark-purple: hsl(308, 57%, 42%);
+$mid-gray-purple: hsl(308, 28%, 53%);
+$mid-purple: hsl(308, 74%, 71%);
+$light-gray-purple: hsl(308, 28%, 78%);
+$light-purple: hsl(308, 32%, 100%);
+$lightest-purple: hsl(308, 12%, 100%);
+
+//https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6 font face mixin from jonathantneal
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma;
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face(Coves, ../font/coves-font/coves-light.otf);
+@include font-face(Ailerons, ../font/aeilerons-font/ailerons-typeface.otf)
+
+$navbar-font-family: "Coves", sans-serif;
+$navbar-font-size:
+$header-font-family: "Ailerons", sans-serif;
+$header-font-size:
+$title-font-family: "Ailerons", sans-serif;
+$title-font-size: 
