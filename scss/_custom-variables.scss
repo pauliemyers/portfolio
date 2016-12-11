@@ -1,47 +1,232 @@
+//Brand Palette
+
+$lightest-color: hsl(189, 12%, 95%);
+//Porcelain
+
+
 $darkest-blue: hsl(189, 14%, 28%);
+//limed spruce
 $dark-blue: hsl(189, 28%, 42%);
+//smalt blue
 $mid-gray-blue: hsl(189, 14%, 53%);
+//juniper
 $mid-blue: hsl(189, 37%, 71%);
+//sinbad
 $light-gray-blue: hsl(189, 14%, 78%);
+//loblolly
 $light-blue: hsl(189, 65%, 85%);
-$lightest-blue: hsl(189, 6%, 100%);
+//mint tulip
 
 $darkest-gold: hsl(37, 28%, 28%);
+//millbrook
 $dark-gold: hsl(37, 57%, 42%);
+//luxor gold
 $mid-gray-gold: hsl(37, 28%, 53%);
+//sandal
 $mid-gold: hsl(37, 74%, 71%);
+//rob roy
 $light-gray-gold: hsl(37, 28%, 78%);
-$light-gold: hsl(37, 32%, 100%);
-$lightest-gold: hsl(37, 12%, 100%);
+//soft amber
+$light-gold: hsl(37, 95%, 85%);
+//cape honey
 
 $darkest-red: hsl(4, 28%, 28%);
+//congo brown
 $dark-red: hsl(4, 57%, 42%);
+//well read
 $mid-gray-red: hsl(4, 28%, 53%);
+//gray-maroon
 $mid-red: hsl(4, 74%, 71%);
+//Apricot
 $light-gray-red: hsl(4, 28%, 78%);
-$light-red: hsl(4, 32%, 100%);
-$lightest-red: hsl(4, 12%, 100%);
+//clam shell
+$light-red: hsl(4, 95%, 85%);
+//melon
 
-$darkest-fuschia: hsl(344, 28%, 28%);
-$dark-fuschia: hsl(344, 57%, 42%);
-$mid-gray-fuschia: hsl(344, 28%, 53%);
-$mid-fuschia: hsl(344, 74%, 71%);
-$light-gray-fuschia: hsl(344, 28%, 78%);
-$light-fuschia: hsl(344, 32%, 100%);
-$lightest-fuschia: hsl(344, 12%, 100%);
+$darkest-pink: hsl(344, 28%, 28%);
+//raspberry chocolate
+$dark-pink: hsl(344, 57%, 42%);
+//hibiscus
+$mid-gray-pink: hsl(344, 28%, 53%);
+//coral tree
+$mid-pink: hsl(344, 74%, 71%);
+//carissma
+$light-gray-pink: hsl(344, 28%, 78%);
+//blossom
+$light-pink: hsl(344, 95%, 85%);
+//light rose
+
 
 $darkest-orange: hsl(15, 28%, 28%);
+//burnt earth
 $dark-orange: hsl(15, 57%, 42%);
+//paarl
 $mid-gray-orange: hsl(15, 28%, 53%);
+//coral sand
 $mid-orange: hsl(15, 74%, 71%);
+//orange roughy
 $light-gray-orange: hsl(15, 28%, 78%);
-$light-orange: hsl(15, 32%, 100%);
-$lightest-orange: hsl(15, 12%, 100%);
+//beach concrete
+$light-orange: hsl(15, 95%, 85%);
+//light apricot
 
-$darkest-purple: hsl(308, 28%, 28%);
-$dark-purple: hsl(308, 57%, 42%);
-$mid-gray-purple: hsl(308, 28%, 53%);
-$mid-purple: hsl(308, 74%, 71%);
-$light-gray-purple: hsl(308, 28%, 78%);
-$light-purple: hsl(308, 32%, 100%);
-$lightest-purple: hsl(308, 12%, 100%);
+$darkest-violet: hsl(308, 28%, 28%);
+//eggplant
+$dark-violet: hsl(308, 57%, 42%);
+//fuchsia violet
+$mid-gray-violet: hsl(308, 28%, 53%);
+//bouquet
+$mid-violet: hsl(308, 74%, 71%);
+//lavender magenta
+$light-gray-violet: hsl(308, 28%, 78%);
+//thistle
+$light-violet: hsl(308, 95%, 85%);
+//lavender violet
+
+
+//brand fonts
+
+@font-face {
+    font-family: 'coves';
+    src: url(../font/coves-font/coves-light.otf);
+    src: url(../font/coves-font/coves-light-webfont.eot),
+         url(../font/coves-font/coves-light-webfont.woff2) format('woff2'),
+         url(../font/coves-font/coves-light-webfont.woff) format('woff'),
+         url(../font/coves-font/coves-light-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'kano';
+    src: url(../font/kano_regular/kano.otf);
+    src: url(../font/kano_regular/kano-webfont.eot),
+        url(../font/kano_regular/kano-webfont.woff2) format('woff2'),
+         url(../font/kano_regular/kano-webfont.woff) format('woff'),
+         url(../font/kano_regular/kano-webfont.ttf) format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ailerons';
+    src: url(../font/ailerons/ailerons-typeface.otf);
+    src: url(../font/ailerons/ailerons-typeface-webfont.eot),
+        url(../font/ailerons/ailerons-typeface-webfont.woff2) format('woff2'),
+        url(../font/ailerons/ailerons-typeface-webfont.woff) format('woff'),
+        url(../font/ailerons/ailerons-typeface-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+            
+}
+
+//
+
+$titles-font-family: "Ailerons", sans-serif;
+$captions-font-family: "Coves", sans-serif;
+$footer-font-family: "Kano", sans-serif;
+
+$huge-font-size: 64px;
+$large-font-size: 32px;
+$mid-font-size: 16px;
+$small-font-size: 12px;
+
+$header-font-size: $huge-font-size;
+$section-font-size: $large-font-size;
+$caption-font-size: $mid-font-size;
+$footer-font-size: $small-font-size;
+$navbar-font-size: $small-font-size;
+
+/*$body-bg-c-home: $lightest-color;
+$transition-c-home: $darkest-blue;
+$header-bg-c-home: $dark-blue;
+$nav-bg-c-home: $dark-blue;
+$footer-bg-c-home: $dark-blue;
+$title-c-home: $dark-blue;
+$caption-color-home: $dark-blue;
+$nav-hover-c-home: $mid-gray-blue;
+$nav-links-c-home: $light-gray-blue;
+$nav-current-c-home: $mid-blue
+$footer-text-c-home: $light-blue;
+$header-visited-c-home: $light-blue;
+$header-unvisited-c-home: light-blue;
+$header-hover-c-home: lightest-color;
+
+$body-bg-c-about: $lightest-color;
+$transition-c-about: $darkest-violet;
+$header-bg-c-about: $dark-violet;
+$footer-bg-c-about: $dark-violet;
+$nav-bg-c-about: $dark-violet;
+$title-c-about: $dark-violet;
+$caption-color-about: $dark-violet;
+$nav-hover-c-about: $mid-gray-violet;
+$nav-links-c-about: $light-gray-violet;
+$nav-current-c-about: $mid-violet;
+$footer-text-c-about: $light-violet;
+$header-visited-c-about: light-violet;
+$header-unvisited-c-about: light-violet;
+$header-hover-c-about: lightest-color;
+
+$body-bg-c-audio: $lightest-color;
+$transition-c-audio: $darkest-red;
+$header-bg-c-audio: $dark-red;
+$footer-bg-c-audio: $dark-red;
+$nav-bg-c-audio: $dark-red;
+$title-c-audio: $dark-red;
+$caption-color-audio: $dark-red;
+$nav-hover-c-audio: $mid-gray-red;
+$nav-links-c-audio $light-gray-red;
+$nav-current-c-audio $mid-red;
+$footer-text-c-audio: $light-red;
+$header-visited-c-audio: $light-red;
+$header-unvisited-c-audio: $light-red;
+$header-hover-c-audio: lightest-color;
+
+$body-bg-c-design: $lightest-color;
+$transition-c-design: $darkest-pink;
+$header-bg-c-design: $dark-pink;
+$footer-bg-c-design: $dark-pink;
+$nav-bg-c-design: $dark-pink;
+$title-c-design: $dark-pink;
+$caption-color-design: $dark-pink;
+$nav-hover-c-design: $mid-gray-pink;
+$nav-links-c-design: $light-gray-pink;
+$nav-current-c-design: $mid-pink;
+$footer-text-c-design: $light-pink;
+$header-visited-c-design: $light-pink;
+$header-unvisited-c-design: $light-pink;
+$header-hover-c-design: lightest-color;
+
+$body-bg-c-art: $lightest-color;
+$transition-c-art: $darkest-gold;
+$header-bg-c-art: $dark-gold;
+$footer-bg-c-art: $dark-gold;
+$nav-bg-c-art: $dark-gold;
+$title-c-art: $dark-gold;
+$caption-color-art: $dark-gold;
+$nav-hover-c-art: $mid-gray-gold;
+$nav-links-c-art: $light-gray-gold;
+$nav-current-c-art: $mid-gold;
+$footer-text-c-art: $light-gold;
+$header-visited-c-art: $light-gold;
+$header-unvisited-c-art: $light-gold;
+$header-hover-c-art: $lightest-color;
+
+$body-bg-c-coding: $lightest-color;
+$transition-c-coding: $darkest-orange;
+$header-bg-c-coding: $dark-orange;
+$footer-bg-c-coding: $dark-orange;
+$nav-bg-c-coding: $dark-orange;
+$title-c-coding $dark-orange;
+$caption-color-coding $dark-orange;
+$nav-hover-c-coding: $mid-gray-orange;
+$nav-links-c-coding: $light-gray-orange;
+$nav-current-c-coding: $mid-orange;
+$footer-text-c-coding: $light-orange;
+$header-visited-c-coding: $light-orange;
+$header-unvisited-c-coding: $light-orange;
+$header-hover-c-coding: $lightest-color;*/

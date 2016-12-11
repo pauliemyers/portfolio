@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'coves';
+    src: url('coves-light.otf');
+    src: url('coves-light-webfont.eot'),
+         url('coves-light-webfont.woff2') format('woff2'),
+         url('coves-light-webfont.woff') format('woff'),
+         url('coves-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'kano';
+    src: url('kano.otf');
+    src: url('kano-webfont.eot'),
+        url('kano-webfont.woff2') format('woff2'),
+         url('kano-webfont.woff') format('woff'),
+         url('kano-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ailerons';
+    src: url('ailerons-typeface.otf');
+    src: url('ailerons-typeface-webfont.eot'),
+        url('ailerons-typeface-webfont.woff2') format('woff2'),
+        url('ailerons-typeface-webfont.woff') format('woff'),
+        url('ailerons-typeface-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+            
+}
