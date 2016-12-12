@@ -14,9 +14,69 @@
   src: url(../font/ailerons/ailerons-typeface.otf);
   font-weight: normal;
   font-style: normal; }
+html {
+  height: 100%;
+  box-sizing: border-box; }
+
+div.container-fluid {
+  padding-bottom: 60px; }
+
+div.caption {
+  padding-bottom: 60px;
+  text-align: center;
+  width: 100%; }
+  div.caption p {
+    margin-left: 20%;
+    margin-right: 20%; }
+
+div.objectdiv {
+  padding-bottom: 60px;
+  text-align: center; }
+
+div.iframediv {
+  padding-bottom: 60px;
+  text-align: center; }
+
+div.col-md-5 {
+  font-family: "Kano", sans-serif;
+  font-size: 16px; }
+
+div.col-md-12 {
+  padding-bottom: 60px;
+  text-align: center; }
+
+img {
+  max-width: 100%; }
+
+iframe {
+  max-width: 100%; }
+
+object {
+  max-width: 100%; }
+
+img.singleimage {
+  width: inherit;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+div.col-sm-4 {
+  color: #f0fdff;
+  max-width: inherit;
+  font-size: 24px;
+  font-family: "Coves", sans-serif;
+  text-align: center; }
+
 body.body-home {
   background-color: #f0fdff;
-  color: #4d8089; }
+  color: #4d8089;
+  position: relative;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px; }
+  body.body-home div.wrapper {
+    min-height: 100%;
+    position: relative; }
   body.body-home header {
     text-align: center;
     font-size: 64px;
@@ -33,14 +93,16 @@ body.body-home {
       text-decoration: none;
       color: #f0fdff; }
   body.body-home footer {
-    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     background-color: #3d4e51;
     color: #bfcccf;
     font-family: "Coves", sans-serif;
     font-size: 16px;
-    bottom: 0px;
-    position: absolute;
-    width: 100%; }
+    text-align: center; }
   body.body-home nav.navbar-default {
     background-color: #f0fdff;
     border: 0px;
@@ -82,7 +144,7 @@ body.body-home {
     text-align: center; }
   body.body-home h2 {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 75px;
     padding-bottom: 10px;
     font-family: "Coves", sans-serif;
     font-size: 24px;
@@ -90,7 +152,14 @@ body.body-home {
 
 body.body-coding {
   background-color: #f0fdff;
-  color: #a82e98; }
+  color: #a82e98;
+  position: relative;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px; }
+  body.body-coding div.wrapper {
+    min-height: 100%;
+    position: relative; }
   body.body-coding header {
     text-align: center;
     font-size: 64px;
@@ -156,7 +225,7 @@ body.body-coding {
     text-align: center; }
   body.body-coding h2 {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 75px;
     padding-bottom: 10px;
     font-family: "Coves", sans-serif;
     font-size: 24px;
@@ -164,7 +233,14 @@ body.body-coding {
 
 body.body-about {
   background-color: #f0fdff;
-  color: #a84d2e; }
+  color: #a84d2e;
+  position: relative;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px; }
+  body.body-about div.wrapper {
+    min-height: 100%;
+    position: relative; }
   body.body-about header {
     text-align: center;
     font-size: 64px;
@@ -230,7 +306,7 @@ body.body-about {
     text-align: center; }
   body.body-about h2 {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 75px;
     padding-bottom: 10px;
     font-family: "Coves", sans-serif;
     font-size: 24px;
@@ -238,7 +314,14 @@ body.body-about {
 
 body.body-audio {
   background-color: #f0fdff;
-  color: #a8362e; }
+  color: #a8362e;
+  position: relative;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px; }
+  body.body-audio div.wrapper {
+    min-height: 100%;
+    position: relative; }
   body.body-audio header {
     text-align: center;
     font-size: 64px;
@@ -304,7 +387,7 @@ body.body-audio {
     text-align: center; }
   body.body-audio h2 {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 75px;
     padding-bottom: 10px;
     font-family: "Coves", sans-serif;
     font-size: 24px;
@@ -312,7 +395,14 @@ body.body-audio {
 
 body.body-art {
   background-color: #f0fdff;
-  color: #a8792e; }
+  color: #a8792e;
+  position: relative;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px; }
+  body.body-art div.wrapper {
+    min-height: 100%;
+    position: relative; }
   body.body-art header {
     text-align: center;
     font-size: 64px;
@@ -379,14 +469,21 @@ body.body-art {
     text-align: center; }
   body.body-art h2 {
     margin-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 75px;
     font-family: "Coves", sans-serif;
     font-size: 24px;
     text-align: center; }
 
 body.body-design {
   background-color: #f0fdff;
-  color: #a82e4f; }
+  color: #a82e4f;
+  position: relative;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px; }
+  body.body-design div.wrapper {
+    min-height: 100%;
+    position: relative; }
   body.body-design header {
     text-align: center;
     font-size: 64px;
@@ -452,7 +549,7 @@ body.body-design {
     text-align: center; }
   body.body-design h2 {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 75px;
     padding-bottom: 10px;
     font-family: "Coves", sans-serif;
     font-size: 24px;

@@ -92,10 +92,78 @@ $light-violet: hsl(308, 95%, 85%);
     font-weight: normal;
     font-style: normal;
 }
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+div.container-fluid{
+    padding-bottom: 60px;
+}
+div.caption {
+    padding-bottom: 60px;
+    text-align: center;
+    width: 100%;
+        p {
+            margin-left: 20%;
+            margin-right: 20%;
+            }
+}
+div.objectdiv {
+    padding-bottom: 60px;
+    text-align: center;
+}
+div.iframediv {
+    padding-bottom: 60px;
+    text-align: center;
+}
+div.col-md-5 {
+    font-family: "Kano", sans-serif;
+    font-size: 16px;
+}
+
+div.col-md-12 {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+object {
+    max-width: 100%;
+}
+
+img.singleimage {
+    width: inherit;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div.col-sm-4 {
+    color: $lightest-color;
+    max-width: inherit;
+    font-size: 24px;
+    font-family: "Coves", sans-serif;
+    text-align: center;
+}
 //home style
 body.body-home {
     background-color: $lightest-color;
     color: $dark-blue;
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    div.wrapper {
+        min-height: 100%;
+        position: relative;
+    }
     header {
         text-align: center;
         font-size: 64px;
@@ -115,15 +183,17 @@ body.body-home {
             color: $lightest-color;
         }
     }
-     footer {
-        text-align: center;
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
         background-color: $darkest-blue;
         color: $light-gray-blue;
         font-family: "Coves", sans-serif;
         font-size: 16px;
-        bottom: 0px;
-        position: absolute;
-        width: 100%;
+        text-align: center;
     }
     nav.navbar-default {
         background-color: $lightest-color;
@@ -162,7 +232,7 @@ body.body-home {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    div.col-md-7{
+    div.col-md-7 {
         img {
             width: inherit;
             height: inherit;
@@ -178,7 +248,7 @@ body.body-home {
     }
     h2 {
         margin-top: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 75px;
         padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
@@ -189,6 +259,14 @@ body.body-home {
 body.body-coding {
     background-color: $lightest-color;
     color: $dark-violet;
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    div.wrapper {
+        min-height: 100%;
+        position: relative;
+    }
     header {
         text-align: center;
         font-size: 64px;
@@ -208,7 +286,7 @@ body.body-coding {
             color: $lightest-color;
         }
     }
-     footer {
+    footer {
         text-align: center;
         background-color: $darkest-violet;
         color: $light-gray-violet;
@@ -255,7 +333,7 @@ body.body-coding {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    div.col-md-7{
+    div.col-md-7 {
         img {
             width: inherit;
             height: inherit;
@@ -271,7 +349,7 @@ body.body-coding {
     }
     h2 {
         margin-top: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 75px;
         padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
@@ -282,6 +360,14 @@ body.body-coding {
 body.body-about {
     background-color: $lightest-color;
     color: $dark-orange;
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    div.wrapper {
+        min-height: 100%;
+        position: relative;
+    }
     header {
         text-align: center;
         font-size: 64px;
@@ -348,13 +434,13 @@ body.body-about {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    div.col-md-7{
+    div.col-md-7 {
         img {
             width: inherit;
             height: inherit;
         }
     }
-   h1 {
+    h1 {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-bottom: 10px;
@@ -364,7 +450,7 @@ body.body-about {
     }
     h2 {
         margin-top: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 75px;
         padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
@@ -375,6 +461,14 @@ body.body-about {
 body.body-audio {
     background-color: $lightest-color;
     color: $dark-red;
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    div.wrapper {
+        min-height: 100%;
+        position: relative;
+    }
     header {
         text-align: center;
         font-size: 64px;
@@ -394,7 +488,7 @@ body.body-audio {
             color: $lightest-color;
         }
     }
-     footer {
+    footer {
         text-align: center;
         background-color: $darkest-red;
         color: $light-gray-red;
@@ -441,7 +535,7 @@ body.body-audio {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    div.col-md-7{
+    div.col-md-7 {
         img {
             width: inherit;
             height: inherit;
@@ -457,7 +551,7 @@ body.body-audio {
     }
     h2 {
         margin-top: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 75px;
         padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
@@ -468,6 +562,14 @@ body.body-audio {
 body.body-art {
     background-color: $lightest-color;
     color: $dark-gold;
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    div.wrapper {
+        min-height: 100%;
+        position: relative;
+    }
     header {
         text-align: center;
         font-size: 64px;
@@ -487,7 +589,7 @@ body.body-art {
             color: $lightest-color;
         }
     }
-     footer {
+    footer {
         text-align: center;
         background-color: $darkest-gold;
         color: $light-gray-gold;
@@ -531,13 +633,13 @@ body.body-art {
     }
     div.col-sm-4 {
         img {
-        width: auto;
-        height: auto;
-        padding-top: 25px;
-        padding-bottom: 25px;
+            width: auto;
+            height: auto;
+            padding-top: 25px;
+            padding-bottom: 25px;
         }
     }
-    div.col-md-7{
+    div.col-md-7 {
         img {
             width: inherit;
             height: inherit;
@@ -553,7 +655,7 @@ body.body-art {
     }
     h2 {
         margin-top: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 75px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
         text-align: center;
@@ -563,6 +665,14 @@ body.body-art {
 body.body-design {
     background-color: $lightest-color;
     color: $dark-pink;
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    div.wrapper {
+        min-height: 100%;
+        position: relative;
+    }
     header {
         text-align: center;
         font-size: 64px;
@@ -582,7 +692,7 @@ body.body-design {
             color: $lightest-color;
         }
     }
-     footer {
+    footer {
         text-align: center;
         background-color: $darkest-pink;
         color: $light-gray-pink;
@@ -629,7 +739,7 @@ body.body-design {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    div.col-md-7{
+    div.col-md-7 {
         img {
             width: inherit;
             height: inherit;
@@ -645,7 +755,7 @@ body.body-design {
     }
     h2 {
         margin-top: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 75px;
         padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;

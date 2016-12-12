@@ -6,60 +6,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- import our custom CSS which includes Bootsrap -->
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body class="body-design">
-    <div class="page header">
-        <header><a href="index.html">PAUL ARTHUR MYERS</a></header>
-    </div>
-    <nav class="navbar navbar-default">
+    <div class="wrapper">
+        <div class="page header">
+            <header><a href="index.html">PAUL ARTHUR MYERS</a></header>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="coding-menu.html">Coding</a>
+                        </li>
+                        <li>
+                            <a href="audio-menu.html">Audio</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Design</a>
+                        </li>
+                        <li>
+                            <a href="art-menu.html">Art</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="coding-menu.html">Coding</a>
-                    </li>
-                    <li>
-                        <a href="audio-menu.html">Audio</a>
-                    </li>
-                    <li>
-                        <a href="#">Design</a>
-                    </li>
-                    <li>
-                        <a href="art-menu.html">Art</a>
-                    </li>
-                </ul>
-            </div>
+            <h1 class="text-center">Design</h1>
         </div>
-    </nav>
-    
-    
-       <div class="container-fluid">
-        <h1 class="text-center">Design</h1>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 text-center"><a href="pages-design/the-cyoub.html"><img id="cyoubbutton" src="buttons/thecyoub-design-button.jpg" /></a></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <a href="pages-design/the-cyoub.html"><img id="cyoubbutton" src="buttons/thecyoub-design-button.jpg" /></a>
+                </div>
+            </div>
         </div>
     </div>
 
-<footer>All content on this page was edited with permission from original creator or edited by Paul Myers, &copy; 2016</footer>
-    
-    <script src="js/lib/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <footer>All content on this page was edited with permission from original creator or edited by Paul Myers, &copy; 2016</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/greensock-js/src/minified/TweenMax.min.js" type="text/javascript"></script>
 
 
