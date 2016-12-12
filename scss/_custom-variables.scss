@@ -73,6 +73,104 @@ $light-gray-violet: hsl(308, 28%, 78%);
 //thistle
 $light-violet: hsl(308, 95%, 85%);
 //lavender violet
+
+table {
+        border-color: black;
+        border-width: 5px;
+    font-family: "Coves", sans-serif;
+        color: hsl(189%, 14%, 42%);
+        font-size: 8px;
+    }
+td {
+    .home-darkest {
+        background-color: $darkest-blue;
+    }
+    .about-darkest {
+        background-color: $darkest-orange;
+    }.coding-darkest {
+        background-color: $darkest-violet;
+    }.audio-darkest {
+        background-color: $darkest-red;
+    }.design-darkest {
+        background-color: $darkest-pink;
+    }.art-darkest {
+        background-color: $darkest-gold;
+    }
+    .home-dark {
+        background-color: $dark-blue;
+    }
+    .about-dark {
+        background-color: $dark-orange;
+    }.coding-dark {
+        background-color: $dark-violet;
+    }.audio-dark {
+        background-color: $dark-red;
+    }.design-dark {
+        background-color: $dark-pink;
+    }.art-dark {
+        background-color: $dark-gold;
+    }
+    .home-mediumgray {
+        background-color: $mid-gray-blue;
+    }
+    .about-mediumgray {
+        background-color: $mid-gray-orange;
+    }.coding-mediumgray {
+        background-color: $mid-gray-violet;
+    }.audio-mediumgray {
+        background-color: $mid-gray-red;
+    }.design-mediumgray {
+        background-color: $mid-gray-pink;
+    }.art-mediumgray {
+        background-color: $mid-gray-gold;
+    }
+    .home-medium {
+        background-color: $mid-blue;
+    }
+    .about-medium {
+        background-color: $mid-orange;
+    }.coding-medium {
+        background-color: $mid-violet;
+    }.audio-medium {
+        background-color: $mid-red;
+    }.design-medium {
+        background-color: $mid-pink;
+    }.art-medium {
+        background-color: $mid-gold;
+    }
+    .home-lightgray {
+        background-color: $light-gray-blue;
+    }
+    .about-lightgray {
+        background-color: $light-gray-orange;
+    }.coding-lightgray {
+        background-color: $light-gray-violet;
+    }.audio-lightgray {
+        background-color: $light-gray-red;
+    }.design-lightgray {
+        background-color: $light-gray-pink;
+    }.art-lightgray {
+        background-color: $light-gray-gold;
+    }
+    .home-light {
+        background-color: $light-blue;
+    }
+    .about-light {
+        background-color: $light-orange;
+    }.coding-light {
+        background-color: $light-violet;
+    }.audio-light {
+        background-color: $light-red;
+    }.design-light {
+        background-color: $light-pink;
+    }.art-light {
+        background-color: $light-gold;
+    }
+    
+    td {
+        height: 10px;
+    }
+}
 //brand fonts
 @font-face {
     font-family: Coves;
