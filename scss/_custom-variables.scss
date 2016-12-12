@@ -87,59 +87,506 @@ $light-violet: hsl(308, 95%, 85%);
 //brand fonts
 
 @font-face {
-    font-family: 'coves';
+    font-family: Coves;
     src: url(../font/coves-font/coves-light.otf);
-    src: url(../font/coves-font/coves-light-webfont.eot),
-         url(../font/coves-font/coves-light-webfont.woff2) format('woff2'),
-         url(../font/coves-font/coves-light-webfont.woff) format('woff'),
-         url(../font/coves-font/coves-light-webfont.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
 @font-face {
-    font-family: 'kano';
+    font-family: Kano;
     src: url(../font/kano_regular/kano.otf);
-    src: url(../font/kano_regular/kano-webfont.eot),
-        url(../font/kano_regular/kano-webfont.woff2) format('woff2'),
-         url(../font/kano_regular/kano-webfont.woff) format('woff'),
-         url(../font/kano_regular/kano-webfont.ttf) format('truetype');
-
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'ailerons';
+    font-family: Ailerons;
     src: url(../font/ailerons/ailerons-typeface.otf);
-    src: url(../font/ailerons/ailerons-typeface-webfont.eot),
-        url(../font/ailerons/ailerons-typeface-webfont.woff2) format('woff2'),
-        url(../font/ailerons/ailerons-typeface-webfont.woff) format('woff'),
-        url(../font/ailerons/ailerons-typeface-webfont.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
-            
 }
 
-//
+//home style
 
-$titles-font-family: "Ailerons", sans-serif;
-$captions-font-family: "Coves", sans-serif;
-$footer-font-family: "Kano", sans-serif;
+body.body-home {
+    background-color: $lightest-color;
+    color: $dark-blue;
+    
+    header {
+        text-align: center;
+        font-size: 64px;
+        background-color: $dark-blue;
+        color: $light-gray-blue;
+        font-family: "Ailerons", sans-serif;
+        
+        a:link {
+            text-decoration: none;
+            color: $light-blue;
+        }
+        
+        a:visited {
+            text-decoration: none;
+            color: $light-blue
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: $lightest-color;
+        }
+    }
 
-$huge-font-size: 64px;
-$large-font-size: 32px;
-$mid-font-size: 16px;
-$small-font-size: 12px;
+nav.navbar-default {
+    background-color: $lightest-color;
+    border: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a:link {
+        display: block;
+        padding: 6 px, 12 px;
+        text-decoration: none;
+        color: $mid-blue;
+        font-family: "Kano", sans-serif;
+    }
+    
+    a:visited {
+        color: $mid-blue;
+    }
+    
+    a:hover {
+        color: $mid-gray-blue;
+    }
+    
+    div.icon-bar {
+        color: $mid-blue;
+    }
+}
+    
+    img {
+        width: auto;
+        height: auto;
+    }
+    
+    h1 {
+        padding-bottom: 10px;
+        font-family: "Ailerons", sans-serif;
+        font-size: 48px;
+    }
+}
 
-$header-font-size: $huge-font-size;
-$section-font-size: $large-font-size;
-$caption-font-size: $mid-font-size;
-$footer-font-size: $small-font-size;
-$navbar-font-size: $small-font-size;
+
+
+
+//about style
+
+body.body-about {
+    background-color: $lightest-color;
+    color: $dark-violet;
+    
+    header {
+        text-align: center;
+        font-size: 64px;
+        background-color: $dark-violet;
+        color: $light-gray-violet;
+        font-family: "Ailerons", sans-serif;
+        
+        a:link {
+            text-decoration: none;
+            color: $light-violet;
+        }
+        
+        a:visited {
+            text-decoration: none;
+            color: $light-violet;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: $lightest-color;
+        }
+    }
+
+nav.navbar-default {
+    background-color: $lightest-color;
+    border: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a:link {
+        display: block;
+        padding: 6 px, 12 px;
+        text-decoration: none;
+        color: $mid-violet;
+        font-family: "Kano", sans-serif;
+    }
+    
+    a:visited {
+        color: $mid-violet;
+    }
+    
+    a:hover {
+        color: $mid-gray-violet;
+    }
+    
+    div.icon-bar {
+        color: $mid-violet;
+    }
+}
+    
+    img {
+        width: auto;
+        height: auto;
+    }
+    
+    h1 {
+        padding-bottom: 10px;
+        font-family: "Ailerons", sans-serif;
+        font-size: 48px;
+    }
+}
+
+
+
+//coding style
+
+
+body.body-coding {
+    background-color: $lightest-color;
+    color: $dark-orange;
+    
+    header {
+        text-align: center;
+        font-size: 64px;
+        background-color: $dark-orange;
+        color: $light-gray-orange;
+        font-family: "Ailerons", sans-serif;
+        
+        a:link {
+            text-decoration: none;
+            color: $light-orange;
+        }
+        
+        a:visited {
+            text-decoration: none;
+            color: $light-orange;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: $light-gray-orange;
+        }
+    }
+
+nav.navbar-default {
+    background-color: $lightest-color;
+    border: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a:link {
+        display: block;
+        padding: 6 px, 12 px;
+        text-decoration: none;
+        color: $mid-orange;
+        font-family: "Kano", sans-serif;
+    }
+    
+    a:visited {
+        color: $mid-orange;
+    }
+    
+    a:hover {
+        color: $mid-gray-orange;
+    }
+    
+    div.icon-bar {
+        color: $mid-orange;
+    }
+}
+    
+    img {
+        width: auto;
+        height: auto;
+    }
+    
+    h1 {
+        padding-bottom: 10px;
+        font-family: "Ailerons", sans-serif;
+        font-size: 48px;
+    }
+}
+
+
+
+
+//audio style
+
+
+body.body-audio {
+    background-color: $lightest-color;
+    color: $dark-red;
+    
+    header {
+        text-align: center;
+        font-size: 64px;
+        background-color: $dark-red;
+        color: $light-gray-red;
+        font-family: "Ailerons", sans-serif;
+        
+        a:link {
+            text-decoration: none;
+            color: $light-red;
+        }
+        
+        a:visited {
+            text-decoration: none;
+            color: $light-red;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: $lightest-color;
+        }
+    }
+
+nav.navbar-default {
+    background-color: $lightest-color;
+    border: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a:link {
+        display: block;
+        padding: 6 px, 12 px;
+        text-decoration: none;
+        color: $mid-red;
+        font-family: "Kano", sans-serif;
+    }
+    
+    a:visited {
+        color: $mid-red;
+    }
+    
+    a:hover {
+        color: $mid-gray-red;
+    }
+    
+    div.icon-bar {
+        color: $mid-red;
+    }
+}
+    
+    img {
+        width: auto;
+        height: auto;
+    }
+    
+    h1 {
+        padding-bottom: 10px;
+        font-family: "Ailerons", sans-serif;
+        font-size: 48px;
+    }
+}
+
+
+//art style
+
+
+body.body-art {
+    background-color: $lightest-color;
+    color: $dark-gold;
+    
+    header {
+        text-align: center;
+        font-size: 64px;
+        background-color: $dark-gold;
+        color: $light-gray-gold;
+        font-family: "Ailerons", sans-serif;
+        
+        a:link {
+            text-decoration: none;
+            color: $light-gold;
+        }
+        
+        a:visited {
+            text-decoration: none;
+            color: $light-gold;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: $lightest-color;
+        }
+    }
+
+nav.navbar-default {
+    background-color: $lightest-color;
+    border: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a:link {
+        display: block;
+        padding: 6 px, 12 px;
+        text-decoration: none;
+        color: $mid-gold;
+        font-family: "Kano", sans-serif;
+    }
+    
+    a:visited {
+        color: $mid-gold;
+    }
+    
+    a:hover {
+        color: $mid-gray-gold;
+    }
+    
+    div.icon-bar {
+        color: $mid-gold;
+    }
+}
+    
+    img {
+        width: auto;
+        height: auto;
+    }
+    
+    h1 {
+        padding-bottom: 10px;
+        font-family: "Ailerons", sans-serif;
+        font-size: 48px;
+    }
+}
+
+
+
+//design style
+
+
+body.body-design {
+    background-color: $lightest-color;
+    color: $dark-pink;
+    
+    header {
+        text-align: center;
+        font-size: 64px;
+        background-color: $dark-pink;
+        color: $light-gray-pink;
+        font-family: "Ailerons", sans-serif;
+        
+        a:link {
+            text-decoration: none;
+            color: $light-pink;
+        }
+        
+        a:visited {
+            text-decoration: none;
+            color: $light-pink;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: $lightest-color;
+        }
+    }
+
+nav.navbar-default {
+    background-color: $lightest-color;
+    border: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a:link {
+        display: block;
+        padding: 6 px, 12 px;
+        text-decoration: none;
+        color: $mid-pink;
+        font-family: "Kano", sans-serif;
+    }
+    
+    a:visited {
+        color: $mid-pink;
+    }
+    
+    a:hover {
+        color: $mid-gray-pink;
+    }
+    
+    div.icon-bar {
+        color: $mid-pink;
+    }
+}
+    
+    img {
+        width: auto;
+        height: auto;
+    }
+    
+    h1 {
+        padding-bottom: 10px;
+        font-family: "Ailerons", sans-serif;
+        font-size: 48px;
+    }
+}
+
+
+
 
 /*$body-bg-c-home: $lightest-color;
 $transition-c-home: $darkest-blue;

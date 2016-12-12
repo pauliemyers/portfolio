@@ -10,7 +10,7 @@
 
 	// Add the ignore rules that Koala will not search them.
 	// e.g. ["*.json", "*.txt", "test", "path/libs"]
-	"ignores": ["*.css", ".js", "vendor", "images", "games", "audio"],
+	"ignores": ["*.css", "*.js", "vendor", "*.jpg", "*.png", "*.wav"],
 
 	// Compile options of Sass.
 	"options": {
