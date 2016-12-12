@@ -1,9 +1,6 @@
 //Brand Palette
-
-$lightest-color: hsl(189, 12%, 95%);
+$lightest-color: hsl(189, 0%, 95%);
 //Porcelain
-
-
 $darkest-blue: hsl(189, 14%, 28%);
 //limed spruce
 $dark-blue: hsl(189, 28%, 42%);
@@ -16,7 +13,6 @@ $light-gray-blue: hsl(189, 14%, 78%);
 //loblolly
 $light-blue: hsl(189, 65%, 85%);
 //mint tulip
-
 $darkest-gold: hsl(37, 28%, 28%);
 //millbrook
 $dark-gold: hsl(37, 57%, 42%);
@@ -29,7 +25,6 @@ $light-gray-gold: hsl(37, 28%, 78%);
 //soft amber
 $light-gold: hsl(37, 95%, 85%);
 //cape honey
-
 $darkest-red: hsl(4, 28%, 28%);
 //congo brown
 $dark-red: hsl(4, 57%, 42%);
@@ -42,7 +37,6 @@ $light-gray-red: hsl(4, 28%, 78%);
 //clam shell
 $light-red: hsl(4, 95%, 85%);
 //melon
-
 $darkest-pink: hsl(344, 28%, 28%);
 //raspberry chocolate
 $dark-pink: hsl(344, 57%, 42%);
@@ -55,8 +49,6 @@ $light-gray-pink: hsl(344, 28%, 78%);
 //blossom
 $light-pink: hsl(344, 95%, 85%);
 //light rose
-
-
 $darkest-orange: hsl(15, 28%, 28%);
 //burnt earth
 $dark-orange: hsl(15, 57%, 42%);
@@ -69,7 +61,6 @@ $light-gray-orange: hsl(15, 28%, 78%);
 //beach concrete
 $light-orange: hsl(15, 95%, 85%);
 //light apricot
-
 $darkest-violet: hsl(308, 28%, 28%);
 //eggplant
 $dark-violet: hsl(308, 57%, 42%);
@@ -82,511 +73,490 @@ $light-gray-violet: hsl(308, 28%, 78%);
 //thistle
 $light-violet: hsl(308, 95%, 85%);
 //lavender violet
-
-
 //brand fonts
-
 @font-face {
     font-family: Coves;
     src: url(../font/coves-font/coves-light.otf);
     font-weight: normal;
     font-style: normal;
 }
-
-
 @font-face {
     font-family: Kano;
     src: url(../font/kano_regular/kano.otf);
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: Ailerons;
     src: url(../font/ailerons/ailerons-typeface.otf);
     font-weight: normal;
     font-style: normal;
 }
-
 //home style
-
 body.body-home {
     background-color: $lightest-color;
     color: $dark-blue;
-    
     header {
         text-align: center;
         font-size: 64px;
         background-color: $dark-blue;
         color: $light-gray-blue;
         font-family: "Ailerons", sans-serif;
-        
         a:link {
             text-decoration: none;
             color: $light-blue;
         }
-        
         a:visited {
             text-decoration: none;
             color: $light-blue
         }
-        
         a:hover {
             text-decoration: none;
             color: $lightest-color;
         }
     }
-
-nav.navbar-default {
-    background-color: $lightest-color;
-    border: 0px;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    nav.navbar-default {
+        background-color: $lightest-color;
+        border: 0px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        padding-right: 50px;
         ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a:link {
+            display: block;
+            padding: 6 px, 12 px;
+            text-decoration: none;
+            color: $mid-blue;
+            font-family: "Kano", sans-serif;
+        }
+        a:visited {
+            color: $mid-blue;
+        }
+        a:hover {
+            color: $mid-gray-blue;
+        }
+        div.icon-bar {
+            color: $mid-blue;
+        }
     }
-    
-    li {
-        display: inline-block;
-    }
-    
-    a:link {
-        display: block;
-        padding: 6 px, 12 px;
-        text-decoration: none;
-        color: $mid-blue;
-        font-family: "Kano", sans-serif;
-    }
-    
-    a:visited {
-        color: $mid-blue;
-    }
-    
-    a:hover {
-        color: $mid-gray-blue;
-    }
-    
-    div.icon-bar {
-        color: $mid-blue;
-    }
-}
-    
     img {
         width: auto;
         height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
-    
+    div.col-md-7{
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
     h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-bottom: 10px;
         font-family: "Ailerons", sans-serif;
         font-size: 48px;
+        text-align: center;
+    }
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-family: "Coves", sans-serif;
+        font-size: 24px;
+        text-align: center;
     }
 }
-
-
-
-
 //about style
-
 body.body-about {
     background-color: $lightest-color;
     color: $dark-violet;
-    
     header {
         text-align: center;
         font-size: 64px;
         background-color: $dark-violet;
         color: $light-gray-violet;
         font-family: "Ailerons", sans-serif;
-        
         a:link {
             text-decoration: none;
             color: $light-violet;
         }
-        
         a:visited {
             text-decoration: none;
             color: $light-violet;
         }
-        
         a:hover {
             text-decoration: none;
             color: $lightest-color;
         }
     }
-
-nav.navbar-default {
-    background-color: $lightest-color;
-    border: 0px;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    nav.navbar-default {
+        background-color: $lightest-color;
+        border: 0px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        padding-right: 50px;
         ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a:link {
+            display: block;
+            padding: 6 px, 12 px;
+            text-decoration: none;
+            color: $mid-violet;
+            font-family: "Kano", sans-serif;
+        }
+        a:visited {
+            color: $mid-violet;
+        }
+        a:hover {
+            color: $mid-gray-violet;
+        }
+        div.icon-bar {
+            color: $mid-violet;
+        }
     }
-    
-    li {
-        display: inline-block;
-    }
-    
-    a:link {
-        display: block;
-        padding: 6 px, 12 px;
-        text-decoration: none;
-        color: $mid-violet;
-        font-family: "Kano", sans-serif;
-    }
-    
-    a:visited {
-        color: $mid-violet;
-    }
-    
-    a:hover {
-        color: $mid-gray-violet;
-    }
-    
-    div.icon-bar {
-        color: $mid-violet;
-    }
-}
-    
     img {
         width: auto;
         height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
-    
     h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-bottom: 10px;
         font-family: "Ailerons", sans-serif;
         font-size: 48px;
+        text-align: center;
+    }
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-family: "Coves", sans-serif;
+        font-size: 24px;
+        text-align: center;
     }
 }
-
-
-
 //coding style
-
-
 body.body-coding {
     background-color: $lightest-color;
     color: $dark-orange;
-    
     header {
         text-align: center;
         font-size: 64px;
         background-color: $dark-orange;
         color: $light-gray-orange;
         font-family: "Ailerons", sans-serif;
-        
         a:link {
             text-decoration: none;
             color: $light-orange;
         }
-        
         a:visited {
             text-decoration: none;
             color: $light-orange;
         }
-        
         a:hover {
             text-decoration: none;
             color: $light-gray-orange;
         }
     }
-
-nav.navbar-default {
-    background-color: $lightest-color;
-    border: 0px;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    nav.navbar-default {
+        background-color: $lightest-color;
+        border: 0px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        padding-right: 50px;
         ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a:link {
+            display: block;
+            padding: 6 px, 12 px;
+            text-decoration: none;
+            color: $mid-orange;
+            font-family: "Kano", sans-serif;
+        }
+        a:visited {
+            color: $mid-orange;
+        }
+        a:hover {
+            color: $mid-gray-orange;
+        }
+        div.icon-bar {
+            color: $mid-orange;
+        }
     }
-    
-    li {
-        display: inline-block;
-    }
-    
-    a:link {
-        display: block;
-        padding: 6 px, 12 px;
-        text-decoration: none;
-        color: $mid-orange;
-        font-family: "Kano", sans-serif;
-    }
-    
-    a:visited {
-        color: $mid-orange;
-    }
-    
-    a:hover {
-        color: $mid-gray-orange;
-    }
-    
-    div.icon-bar {
-        color: $mid-orange;
-    }
-}
-    
     img {
         width: auto;
         height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
-    
-    h1 {
+   h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-bottom: 10px;
         font-family: "Ailerons", sans-serif;
         font-size: 48px;
+        text-align: center;
+    }
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-family: "Coves", sans-serif;
+        font-size: 24px;
+        text-align: center;
     }
 }
-
-
-
-
 //audio style
-
-
 body.body-audio {
     background-color: $lightest-color;
     color: $dark-red;
-    
     header {
         text-align: center;
         font-size: 64px;
         background-color: $dark-red;
         color: $light-gray-red;
         font-family: "Ailerons", sans-serif;
-        
         a:link {
             text-decoration: none;
             color: $light-red;
         }
-        
         a:visited {
             text-decoration: none;
             color: $light-red;
         }
-        
         a:hover {
             text-decoration: none;
             color: $lightest-color;
         }
     }
-
-nav.navbar-default {
-    background-color: $lightest-color;
-    border: 0px;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    nav.navbar-default {
+        background-color: $lightest-color;
+        border: 0px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        padding-right: 50px;
         ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a:link {
+            display: block;
+            padding: 6 px, 12 px;
+            text-decoration: none;
+            color: $mid-red;
+            font-family: "Kano", sans-serif;
+        }
+        a:visited {
+            color: $mid-red;
+        }
+        a:hover {
+            color: $mid-gray-red;
+        }
+        div.icon-bar {
+            color: $mid-red;
+        }
     }
-    
-    li {
-        display: inline-block;
-    }
-    
-    a:link {
-        display: block;
-        padding: 6 px, 12 px;
-        text-decoration: none;
-        color: $mid-red;
-        font-family: "Kano", sans-serif;
-    }
-    
-    a:visited {
-        color: $mid-red;
-    }
-    
-    a:hover {
-        color: $mid-gray-red;
-    }
-    
-    div.icon-bar {
-        color: $mid-red;
-    }
-}
-    
     img {
         width: auto;
         height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
-    
     h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-bottom: 10px;
         font-family: "Ailerons", sans-serif;
         font-size: 48px;
+        text-align: center;
+    }
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-family: "Coves", sans-serif;
+        font-size: 24px;
+        text-align: center;
     }
 }
-
-
 //art style
-
-
 body.body-art {
     background-color: $lightest-color;
     color: $dark-gold;
-    
     header {
         text-align: center;
         font-size: 64px;
         background-color: $dark-gold;
         color: $light-gray-gold;
         font-family: "Ailerons", sans-serif;
-        
         a:link {
             text-decoration: none;
             color: $light-gold;
         }
-        
         a:visited {
             text-decoration: none;
             color: $light-gold;
         }
-        
         a:hover {
             text-decoration: none;
             color: $lightest-color;
         }
     }
-
-nav.navbar-default {
-    background-color: $lightest-color;
-    border: 0px;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    nav.navbar-default {
+        background-color: $lightest-color;
+        border: 0px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        margin-right: 50px;
         ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a:link {
+            display: block;
+            padding: 6 px, 12 px;
+            text-decoration: none;
+            color: $mid-gold;
+            font-family: "Kano", sans-serif;
+            font-size: 14px;
+        }
+        a:visited {
+            color: $mid-gold;
+        }
+        a:hover {
+            color: $mid-gray-gold;
+        }
+        div.icon-bar {
+            color: $mid-gold;
+        }
     }
-    
-    li {
-        display: inline-block;
-    }
-    
-    a:link {
-        display: block;
-        padding: 6 px, 12 px;
-        text-decoration: none;
-        color: $mid-gold;
-        font-family: "Kano", sans-serif;
-    }
-    
-    a:visited {
-        color: $mid-gold;
-    }
-    
-    a:hover {
-        color: $mid-gray-gold;
-    }
-    
-    div.icon-bar {
-        color: $mid-gold;
-    }
-}
-    
-    img {
+    div.col-sm-4 {
+        img {
         width: auto;
         height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        }
     }
-    
     h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-bottom: 10px;
         font-family: "Ailerons", sans-serif;
         font-size: 48px;
+        text-align: center;
+    }
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-family: "Coves", sans-serif;
+        font-size: 24px;
+        text-align: center;
     }
 }
-
-
-
 //design style
-
-
 body.body-design {
     background-color: $lightest-color;
     color: $dark-pink;
-    
     header {
         text-align: center;
         font-size: 64px;
         background-color: $dark-pink;
         color: $light-gray-pink;
         font-family: "Ailerons", sans-serif;
-        
         a:link {
             text-decoration: none;
             color: $light-pink;
         }
-        
         a:visited {
             text-decoration: none;
             color: $light-pink;
         }
-        
         a:hover {
             text-decoration: none;
             color: $lightest-color;
         }
     }
-
-nav.navbar-default {
-    background-color: $lightest-color;
-    border: 0px;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    nav.navbar-default {
+        background-color: $lightest-color;
+        border: 0px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        padding-right: 50px;
         ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a:link {
+            display: block;
+            padding: 6 px, 12 px;
+            text-decoration: none;
+            color: $mid-pink;
+            font-family: "Kano", sans-serif;
+        }
+        a:visited {
+            color: $mid-pink;
+        }
+        a:hover {
+            color: $mid-gray-pink;
+        }
+        div.icon-bar {
+            color: $mid-pink;
+        }
     }
-    
-    li {
-        display: inline-block;
-    }
-    
-    a:link {
-        display: block;
-        padding: 6 px, 12 px;
-        text-decoration: none;
-        color: $mid-pink;
-        font-family: "Kano", sans-serif;
-    }
-    
-    a:visited {
-        color: $mid-pink;
-    }
-    
-    a:hover {
-        color: $mid-gray-pink;
-    }
-    
-    div.icon-bar {
-        color: $mid-pink;
-    }
-}
-    
     img {
         width: auto;
         height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
-    
     h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-bottom: 10px;
         font-family: "Ailerons", sans-serif;
         font-size: 48px;
+        text-align: center;
+    }
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-family: "Coves", sans-serif;
+        font-size: 24px;
+        text-align: center;
     }
 }
-
-
-
 
 /*$body-bg-c-home: $lightest-color;
 $transition-c-home: $darkest-blue;
