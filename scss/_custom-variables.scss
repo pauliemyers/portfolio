@@ -1,5 +1,5 @@
 //Brand Palette
-$lightest-color: hsl(189, 0%, 95%);
+$lightest-color: #f0fdff;
 //Porcelain
 $darkest-blue: hsl(189, 14%, 28%);
 //limed spruce
@@ -99,7 +99,7 @@ body.body-home {
     header {
         text-align: center;
         font-size: 64px;
-        background-color: $dark-blue;
+        background-color: $darkest-blue;
         color: $light-gray-blue;
         font-family: "Ailerons", sans-serif;
         a:link {
@@ -114,6 +114,16 @@ body.body-home {
             text-decoration: none;
             color: $lightest-color;
         }
+    }
+     footer {
+        text-align: center;
+        background-color: $darkest-blue;
+        color: $light-gray-blue;
+        font-family: "Coves", sans-serif;
+        font-size: 16px;
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
     }
     nav.navbar-default {
         background-color: $lightest-color;
@@ -169,19 +179,20 @@ body.body-home {
     h2 {
         margin-top: 15px;
         margin-bottom: 10px;
+        padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
         text-align: center;
     }
 }
 //about style
-body.body-about {
+body.body-coding {
     background-color: $lightest-color;
     color: $dark-violet;
     header {
         text-align: center;
         font-size: 64px;
-        background-color: $dark-violet;
+        background-color: $darkest-violet;
         color: $light-gray-violet;
         font-family: "Ailerons", sans-serif;
         a:link {
@@ -196,6 +207,16 @@ body.body-about {
             text-decoration: none;
             color: $lightest-color;
         }
+    }
+     footer {
+        text-align: center;
+        background-color: $darkest-violet;
+        color: $light-gray-violet;
+        font-family: "Coves", sans-serif;
+        font-size: 16px;
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
     }
     nav.navbar-default {
         background-color: $lightest-color;
@@ -234,6 +255,12 @@ body.body-about {
         padding-top: 25px;
         padding-bottom: 25px;
     }
+    div.col-md-7{
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
     h1 {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -245,19 +272,20 @@ body.body-about {
     h2 {
         margin-top: 15px;
         margin-bottom: 10px;
+        padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
         text-align: center;
     }
 }
 //coding style
-body.body-coding {
+body.body-about {
     background-color: $lightest-color;
     color: $dark-orange;
     header {
         text-align: center;
         font-size: 64px;
-        background-color: $dark-orange;
+        background-color: $darkest-orange;
         color: $light-gray-orange;
         font-family: "Ailerons", sans-serif;
         a:link {
@@ -272,6 +300,16 @@ body.body-coding {
             text-decoration: none;
             color: $light-gray-orange;
         }
+    }
+    footer {
+        text-align: center;
+        background-color: $darkest-orange;
+        color: $light-gray-orange;
+        font-family: "Coves", sans-serif;
+        font-size: 16px;
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
     }
     nav.navbar-default {
         background-color: $lightest-color;
@@ -310,6 +348,12 @@ body.body-coding {
         padding-top: 25px;
         padding-bottom: 25px;
     }
+    div.col-md-7{
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
    h1 {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -321,6 +365,7 @@ body.body-coding {
     h2 {
         margin-top: 15px;
         margin-bottom: 10px;
+        padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
         text-align: center;
@@ -333,7 +378,7 @@ body.body-audio {
     header {
         text-align: center;
         font-size: 64px;
-        background-color: $dark-red;
+        background-color: $darkest-red;
         color: $light-gray-red;
         font-family: "Ailerons", sans-serif;
         a:link {
@@ -348,6 +393,16 @@ body.body-audio {
             text-decoration: none;
             color: $lightest-color;
         }
+    }
+     footer {
+        text-align: center;
+        background-color: $darkest-red;
+        color: $light-gray-red;
+        font-family: "Coves", sans-serif;
+        font-size: 16px;
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
     }
     nav.navbar-default {
         background-color: $lightest-color;
@@ -386,6 +441,12 @@ body.body-audio {
         padding-top: 25px;
         padding-bottom: 25px;
     }
+    div.col-md-7{
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
     h1 {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -397,6 +458,7 @@ body.body-audio {
     h2 {
         margin-top: 15px;
         margin-bottom: 10px;
+        padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
         text-align: center;
@@ -409,7 +471,7 @@ body.body-art {
     header {
         text-align: center;
         font-size: 64px;
-        background-color: $dark-gold;
+        background-color: $darkest-gold;
         color: $light-gray-gold;
         font-family: "Ailerons", sans-serif;
         a:link {
@@ -424,6 +486,16 @@ body.body-art {
             text-decoration: none;
             color: $lightest-color;
         }
+    }
+     footer {
+        text-align: center;
+        background-color: $darkest-gold;
+        color: $light-gray-gold;
+        font-family: "Coves", sans-serif;
+        font-size: 16px;
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
     }
     nav.navbar-default {
         background-color: $lightest-color;
@@ -465,6 +537,12 @@ body.body-art {
         padding-bottom: 25px;
         }
     }
+    div.col-md-7{
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
     h1 {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -475,7 +553,7 @@ body.body-art {
     }
     h2 {
         margin-top: 15px;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
         text-align: center;
@@ -488,7 +566,7 @@ body.body-design {
     header {
         text-align: center;
         font-size: 64px;
-        background-color: $dark-pink;
+        background-color: $darkest-pink;
         color: $light-gray-pink;
         font-family: "Ailerons", sans-serif;
         a:link {
@@ -503,6 +581,16 @@ body.body-design {
             text-decoration: none;
             color: $lightest-color;
         }
+    }
+     footer {
+        text-align: center;
+        background-color: $darkest-pink;
+        color: $light-gray-pink;
+        font-family: "Coves", sans-serif;
+        font-size: 16px;
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
     }
     nav.navbar-default {
         background-color: $lightest-color;
@@ -541,6 +629,12 @@ body.body-design {
         padding-top: 25px;
         padding-bottom: 25px;
     }
+    div.col-md-7{
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
     h1 {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -552,6 +646,7 @@ body.body-design {
     h2 {
         margin-top: 15px;
         margin-bottom: 10px;
+        padding-bottom: 10px;
         font-family: "Coves", sans-serif;
         font-size: 24px;
         text-align: center;
